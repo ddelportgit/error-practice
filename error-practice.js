@@ -17,3 +17,13 @@ let string = "";
 string = string + "word";
 
 console.log(string);
+
+// try..catch
+
+try {
+  console.log(username);
+} catch (error) {
+  console.log("An error occurred!");
+}
+
+console.log("Program finished.");
