@@ -33,13 +33,21 @@ console.log("Program finished.");
 // throw
 
 function checkPassword(password) {
-  try {
-    if (password.length < 8) {
-      throw new Error("Password must be at least 8 characters.");
-    } else {
-      return "Password accepted!";
-    }
-  } catch (error) {
-    console.log(error);
+  if (password.length < 8) {
+    throw new Error("Password must be at least 8 characters.");
   }
+
+  return "Password accepted!";
+}
+
+try {
+  checkPassword("hello");
+} catch (error) {
+  console.log(error.message);
+}
+
+try {
+  checkPassword("javascript123");
+} catch (error) {
+  console.log(error.message);
 }
