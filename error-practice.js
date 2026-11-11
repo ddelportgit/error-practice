@@ -2,7 +2,7 @@
 
 let name = "John";
 
-console.log(name
+console.log(name);
 
 // reference error
 
