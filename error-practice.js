@@ -41,13 +41,13 @@ function checkPassword(password) {
 }
 
 try {
-  checkPassword("hello");
+  console.log(checkPassword("hello"));
 } catch (error) {
   console.log(error.message);
 }
 
 try {
-  checkPassword("javascript123");
+  console.log(checkPassword("javascript123"));
 } catch (error) {
   console.log(error.message);
 }
