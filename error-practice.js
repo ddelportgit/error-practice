@@ -51,3 +51,15 @@ try {
 } catch (error) {
   console.log(error.message);
 }
+
+// console.log debug
+
+function calculateTotal(price, quantity) {
+  const total = price * quantity;
+  console.log("Price:", price);
+  console.log("Quantity:", quantity);
+  console.log("Total:", total);
+  return total;
+}
+
+calculateTotal(100, 3);
