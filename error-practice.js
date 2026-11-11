@@ -14,4 +14,6 @@ console.log(age);
 
 let string = "";
 
-string.push("word");
+string = string + "word";
+
+console.log(string);
